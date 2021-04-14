@@ -1,6 +1,6 @@
 <?php
 
-namespace Advoor\NovaEditorJs;
+namespace Kreatorij\NovaEditorJs;
 
 use EditorJS\EditorJS;
 use EditorJS\EditorJSException;
@@ -196,6 +196,10 @@ class NovaEditorJs extends Field
         static::$htmlRenderCallbacks['embed'] = function($block) {
             return view('nova-editor-js::embed', $block['data'])->render();
         };
+
+		static::$htmlRenderCallbacks['blok'] = function($block) {
+			return view('nova-editor-js::blok', $block['data'])->render();
+		};
 
         static::$hasBootedHtmlCallbacks = true;
     }

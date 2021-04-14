@@ -8,6 +8,8 @@
 
 <script>
     import {FormField, HandlesValidationErrors} from 'laravel-nova';
+	import DragDrop from 'editorjs-drag-drop';
+	import Undo from 'editorjs-undo';
 
     export default {
         mixins: [FormField, HandlesValidationErrors],
@@ -57,7 +59,8 @@
                     minHeight: 35,
 
                     onReady: function () {
-
+						new Undo({ editor });
+						new DragDrop(editor);
                     },
                     onChange: function () {
                         editor.save().then((savedData) => {

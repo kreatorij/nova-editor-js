@@ -1,6 +1,6 @@
 {
-    "name": "advoor/nova-editor-js",
-    "description": "A Laravel Nova field bringing EditorJs magic to Nova.",
+    "name": "kreatorij/nova-editor-js",
+    "description": "A Laravel Nova field bringing EditorJs magic to Nova (fork)",
     "keywords": [
         "laravel",
         "nova",
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Advoor\\NovaEditorJs\\": "src/"
+            "Kreatorij\\NovaEditorJs\\": "src/"
         }
     },
     "autoload-dev": {
@@ -33,7 +33,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Advoor\\NovaEditorJs\\FieldServiceProvider"
+                "Kreatorij\\NovaEditorJs\\FieldServiceProvider"
             ]
         }
     },
